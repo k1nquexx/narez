@@ -8,7 +8,7 @@
 | Stage 2 | TTS (`edge-tts` + silence removal) & `faster-whisper` ASS subtitles | Completed |
 | Stage 3 | Pillow hook card & FFmpeg renderer (`h264_nvenc` / `libx264`) | Completed |
 | Stage 4 | Script generator (LLM API + offline bank) & AI slideshow (SDXL-Turbo + Ken Burns) | Completed |
-| Stage 5 | Queue worker, FastAPI API, React/Tailwind UI, Windows & Linux scripts | In Progress |
-| Stage 6 | End-to-End nightly test (2 full videos) & verification | Pending |
+| Stage 5 | Queue worker, FastAPI API, React/Tailwind UI, Windows & Linux scripts | Completed |
+| Stage 6 | End-to-End nightly test (2 full videos) & verification | In Progress |
 
 *(Windows 10/11 migration guide will be finalized in Stage 6.)*
