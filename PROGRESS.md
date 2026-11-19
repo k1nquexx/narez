@@ -7,8 +7,8 @@
 | Stage 1 | Skeleton, SQLite DB, cross-platform paths, Cyrillic fonts, git init | Completed |
 | Stage 2 | TTS (`edge-tts` + silence removal) & `faster-whisper` ASS subtitles | Completed |
 | Stage 3 | Pillow hook card & FFmpeg renderer (`h264_nvenc` / `libx264`) | Completed |
-| Stage 4 | Script generator (LLM API + offline bank) & AI slideshow (SDXL-Turbo + Ken Burns) | In Progress |
-| Stage 5 | Queue worker, FastAPI API, React/Tailwind UI, Windows & Linux scripts | Pending |
+| Stage 4 | Script generator (LLM API + offline bank) & AI slideshow (SDXL-Turbo + Ken Burns) | Completed |
+| Stage 5 | Queue worker, FastAPI API, React/Tailwind UI, Windows & Linux scripts | In Progress |
 | Stage 6 | End-to-End nightly test (2 full videos) & verification | Pending |
 
 *(Windows 10/11 migration guide will be finalized in Stage 6.)*

@@ -72,6 +72,7 @@ async def init_db(db_path: Path | None = None) -> None:
                 output_meta_path TEXT NOT NULL DEFAULT '',
                 duration_sec REAL NOT NULL DEFAULT 0.0,
                 file_size_bytes INTEGER NOT NULL DEFAULT 0,
+                encoder_used TEXT NOT NULL DEFAULT '',
                 error_message TEXT NOT NULL DEFAULT '',
                 created_at TEXT NOT NULL,
                 completed_at TEXT NOT NULL DEFAULT '',
