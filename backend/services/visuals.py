@@ -338,13 +338,13 @@ def prepare_gameplay_background(
                 "-c:v",
                 "libx264",
                 "-preset",
-                "veryfast",
+                "ultrafast",
                 "-crf",
-                "19",
+                "17",
                 str(output_video),
             ]
         )
-        _run_ffmpeg(cmd, timeout=300)
+        _run_ffmpeg(cmd, timeout=360)
         return output_video
 
     # Procedural animated dark gradient fallback when assets/backgrounds is empty
@@ -618,7 +618,7 @@ def generate_ai_slideshow(
             y_expr = "ih/2-(ih/zoom/2)"
 
         filter_parts.append(
-            f"[{idx}:v]scale=1620:2880:force_original_aspect_ratio=increase,crop=1620:2880,"
+            f"[{idx}:v]scale=1296:2304:force_original_aspect_ratio=increase,crop=1296:2304,"
             f"zoompan=z='{z_expr}':x='{x_expr}':y='{y_expr}':d={frames_per_slide}:s=1080x1920:fps=60,"
             f"setsar=1,format=yuv420p[v{idx}]"
         )
@@ -637,11 +637,11 @@ def generate_ai_slideshow(
             "-c:v",
             "libx264",
             "-preset",
-            "veryfast",
+            "ultrafast",
             "-crf",
-            "19",
+            "17",
             str(output_video),
         ]
     )
-    _run_ffmpeg(cmd, timeout=360)
+    _run_ffmpeg(cmd, timeout=600)
     return output_video, mode_used
