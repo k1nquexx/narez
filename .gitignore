@@ -1,0 +1,25 @@
+# Virtual environments & caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/.vite/
+*.log
+
+# Runtime data & temp files
+temp/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+.env
+
+# Generated output videos (keep directory structure via .gitkeep)
+output/*
+!output/.gitkeep
